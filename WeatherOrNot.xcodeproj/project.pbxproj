@@ -15,6 +15,7 @@
 		FC7696DA1C1774FF00B77E80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC7696D81C1774FF00B77E80 /* LaunchScreen.storyboard */; };
 		FC7696E51C1774FF00B77E80 /* WeatherOrNotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7696E41C1774FF00B77E80 /* WeatherOrNotTests.swift */; };
 		FC7696F01C1774FF00B77E80 /* WeatherOrNotUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7696EF1C1774FF00B77E80 /* WeatherOrNotUITests.swift */; };
+		FC7696FE1C17773F00B77E80 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7696FD1C17773F00B77E80 /* LocationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		FC7696EB1C1774FF00B77E80 /* WeatherOrNotUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherOrNotUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC7696EF1C1774FF00B77E80 /* WeatherOrNotUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherOrNotUITests.swift; sourceTree = "<group>"; };
 		FC7696F11C1774FF00B77E80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC7696FD1C17773F00B77E80 /* LocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				FC7696D81C1774FF00B77E80 /* LaunchScreen.storyboard */,
 				FC7696DB1C1774FF00B77E80 /* Info.plist */,
 				FC7696D31C1774FF00B77E80 /* WeatherOrNot.xcdatamodeld */,
+				FC7696FD1C17773F00B77E80 /* LocationViewController.swift */,
 			);
 			path = WeatherOrNot;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 				FC7696CF1C1774FF00B77E80 /* ViewController.swift in Sources */,
 				FC7696CD1C1774FF00B77E80 /* AppDelegate.swift in Sources */,
 				FC7696D51C1774FF00B77E80 /* WeatherOrNot.xcdatamodeld in Sources */,
+				FC7696FE1C17773F00B77E80 /* LocationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

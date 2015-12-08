@@ -1,25 +1,153 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Jva-5H-SBN">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Find City-->
+        <scene sceneID="IR2-T1-vIr">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="rOD-ms-qz2" customClass="LocationViewController" customModule="WeatherOrNot" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="DaP-GV-Sal"/>
+                        <viewControllerLayoutGuide type="bottom" id="p6d-S3-qHK"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="1Ab-t4-2AE">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="PsW-3b-6ik">
+                                <rect key="frame" x="20" y="84" width="560" height="496"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="LV4-ym-HOU">
+                                        <rect key="frame" x="130" y="0.0" width="300" height="269"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WeatherOrNotLogo_OneLine" translatesAutoresizingMaskIntoConstraints="NO" id="xAn-hN-SIw">
+                                                <rect key="frame" x="49.5" y="0.0" width="201" height="209"/>
+                                                <animations/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="209" id="QSx-JN-YFf"/>
+                                                    <constraint firstAttribute="width" constant="201" id="gzV-k6-dnE"/>
+                                                </constraints>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2eY-N1-j4q">
+                                                <rect key="frame" x="0.0" y="229" width="300" height="40"/>
+                                                <animations/>
+                                                <color key="backgroundColor" red="0.2470588235" green="0.21960784310000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="Li4-5R-YzY"/>
+                                                    <constraint firstAttribute="width" priority="750" constant="300" id="wY8-J9-Sib"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                                <state key="normal" title="Updating Current Location...">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="viewCurrentLocationWeather:" destination="rOD-ms-qz2" eventType="touchUpInside" id="THf-jq-FQq"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <animations/>
+                                        <variation key="heightClass=compact" axis="horizontal"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="255" axis="vertical" distribution="equalSpacing" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="W3m-zv-Hp0">
+                                        <rect key="frame" x="130" y="381.5" width="300" height="114.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Or Search for weather by a City:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WXD-9E-5Ev">
+                                                <rect key="frame" x="30" y="0.0" width="240" height="20.5"/>
+                                                <animations/>
+                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                                <color key="textColor" red="0.2470588235" green="0.21960784310000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="G9e-qS-umm">
+                                                <rect key="frame" x="0.0" y="32.5" width="300" height="82"/>
+                                                <subviews>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter a city to get weather for" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pUC-Qh-lPf">
+                                                        <rect key="frame" x="28" y="0.0" width="244" height="30"/>
+                                                        <animations/>
+                                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="500" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4An-fR-mXH">
+                                                        <rect key="frame" x="0.0" y="42" width="300" height="40"/>
+                                                        <animations/>
+                                                        <color key="backgroundColor" red="0.2470588235" green="0.21960784310000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="HnI-UD-b51"/>
+                                                            <constraint firstAttribute="width" priority="750" constant="300" id="v3b-SQ-Sv5"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                                        <state key="normal" title="Search">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="weaatherDetailsForManullyEnteredCity:" destination="rOD-ms-qz2" eventType="touchUpInside" id="rPW-Op-aTs"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <animations/>
+                                                <variation key="heightClass=compact" axis="horizontal"/>
+                                            </stackView>
+                                        </subviews>
+                                        <animations/>
+                                    </stackView>
+                                </subviews>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="W3m-zv-Hp0" secondAttribute="bottom" id="6iK-j5-Htl"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.7725490196" green="0.74117647060000003" blue="0.6588235294" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="PsW-3b-6ik" secondAttribute="trailing" priority="750" constant="20" id="gZu-n3-X7u"/>
+                            <constraint firstItem="PsW-3b-6ik" firstAttribute="top" secondItem="DaP-GV-Sal" secondAttribute="bottom" priority="750" constant="20" id="jJB-IK-cjx"/>
+                            <constraint firstItem="PsW-3b-6ik" firstAttribute="leading" secondItem="1Ab-t4-2AE" secondAttribute="leading" priority="750" constant="20" id="qLR-kv-Nvk"/>
+                            <constraint firstItem="p6d-S3-qHK" firstAttribute="top" secondItem="PsW-3b-6ik" secondAttribute="bottom" priority="750" constant="20" id="xDR-DL-BXG"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Find City" id="1WV-sr-dXC"/>
+                    <connections>
+                        <outlet property="currentLocationButton" destination="2eY-N1-j4q" id="jaI-zP-qAI"/>
+                        <outlet property="manualCityTextField" destination="pUC-Qh-lPf" id="teW-KI-bXT"/>
+                        <outlet property="stackViewBottomConstraint" destination="xDR-DL-BXG" id="8ds-bn-Wt0"/>
+                        <outlet property="topStackView" destination="LV4-ym-HOU" id="dyD-tJ-t0M"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T1H-n0-3I2" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1267" y="249"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Oaw-6A-Omn">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Jva-5H-SBN" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nQD-rw-zg5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.6588235294" green="0.81960784310000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="textShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="rOD-ms-qz2" kind="relationship" relationship="rootViewController" id="M0w-O9-8X9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2sx-cc-245" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="455" y="249"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="WeatherOrNotLogo_OneLine" width="201" height="209"/>
+    </resources>
 </document>
