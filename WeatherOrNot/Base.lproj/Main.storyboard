@@ -43,9 +43,6 @@
                                                 <state key="normal" title="Updating Current Location...">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
-                                                <connections>
-                                                    <action selector="viewCurrentLocationWeather:" destination="rOD-ms-qz2" eventType="touchUpInside" id="THf-jq-FQq"/>
-                                                </connections>
                                             </button>
                                         </subviews>
                                         <animations/>
@@ -82,9 +79,6 @@
                                                         <state key="normal" title="Search">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         </state>
-                                                        <connections>
-                                                            <action selector="weaatherDetailsForManullyEnteredCity:" destination="rOD-ms-qz2" eventType="touchUpInside" id="rPW-Op-aTs"/>
-                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <animations/>

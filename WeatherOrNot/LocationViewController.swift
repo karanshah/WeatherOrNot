@@ -37,19 +37,11 @@ class LocationViewController: UIViewController, UITextFieldDelegate {
         NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("keyboardWillHide:"), name:UIKeyboardWillHideNotification, object: nil);
     }
     
-    @IBAction func viewCurrentLocationWeather(sender: UIButton) {
-//        if case .Found(let city) = currentLocationStatus {
-//            weatherCity = city
-//            performSegueWithIdentifier("WeatherDetailSegue", sender: nil)
-//        }
-    }
+    // attach Current Location Button - viewCurrentLocationWeather
     
-    @IBAction func weaatherDetailsForManullyEnteredCity(sender: UIButton) {
-//        if let manualCityInfo = manualCityTextField.text {
-//            weatherCity = manualCityInfo
-//            performSegueWithIdentifier("WeatherDetailSegue", sender: nil)
-//        }
-    }
+    
+    // attach Search button - weatherDetailsForManullyEnteredCity
+   
     
 //    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
 //        if let wdc = segue.destinationViewController as? WeatherDetailViewController where segue.identifier == "WeatherDetailSegue" {

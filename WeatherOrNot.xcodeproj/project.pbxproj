@@ -16,6 +16,8 @@
 		FC7696E51C1774FF00B77E80 /* WeatherOrNotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7696E41C1774FF00B77E80 /* WeatherOrNotTests.swift */; };
 		FC7696F01C1774FF00B77E80 /* WeatherOrNotUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7696EF1C1774FF00B77E80 /* WeatherOrNotUITests.swift */; };
 		FC7696FE1C17773F00B77E80 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7696FD1C17773F00B77E80 /* LocationViewController.swift */; };
+		FC7697001C178F1B00B77E80 /* WeatherAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7696FF1C178F1B00B77E80 /* WeatherAPIService.swift */; };
+		FC7697021C17901000B77E80 /* CityWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7697011C17901000B77E80 /* CityWeather.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		FC7696EF1C1774FF00B77E80 /* WeatherOrNotUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherOrNotUITests.swift; sourceTree = "<group>"; };
 		FC7696F11C1774FF00B77E80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC7696FD1C17773F00B77E80 /* LocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
+		FC7696FF1C178F1B00B77E80 /* WeatherAPIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherAPIService.swift; sourceTree = "<group>"; };
+		FC7697011C17901000B77E80 /* CityWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityWeather.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,8 @@
 				FC7696DB1C1774FF00B77E80 /* Info.plist */,
 				FC7696D31C1774FF00B77E80 /* WeatherOrNot.xcdatamodeld */,
 				FC7696FD1C17773F00B77E80 /* LocationViewController.swift */,
+				FC7696FF1C178F1B00B77E80 /* WeatherAPIService.swift */,
+				FC7697011C17901000B77E80 /* CityWeather.swift */,
 			);
 			path = WeatherOrNot;
 			sourceTree = "<group>";
@@ -262,8 +268,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC7697001C178F1B00B77E80 /* WeatherAPIService.swift in Sources */,
 				FC7696CF1C1774FF00B77E80 /* ViewController.swift in Sources */,
 				FC7696CD1C1774FF00B77E80 /* AppDelegate.swift in Sources */,
+				FC7697021C17901000B77E80 /* CityWeather.swift in Sources */,
 				FC7696D51C1774FF00B77E80 /* WeatherOrNot.xcdatamodeld in Sources */,
 				FC7696FE1C17773F00B77E80 /* LocationViewController.swift in Sources */,
 			);
