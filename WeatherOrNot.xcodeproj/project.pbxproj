@@ -785,6 +785,7 @@
 				FC8CF6441C17E230008659C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FC8CF6491C17E230008659C5 /* Build configuration list for PBXNativeTarget "UIComponentsTests" */ = {
 			isa = XCConfigurationList;
@@ -793,6 +794,7 @@
 				FC8CF6461C17E230008659C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
