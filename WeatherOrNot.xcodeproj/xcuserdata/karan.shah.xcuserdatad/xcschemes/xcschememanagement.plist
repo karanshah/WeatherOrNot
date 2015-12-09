@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>UIComponents.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>WeatherOrNot.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -23,6 +28,16 @@
 			<true/>
 		</dict>
 		<key>FC7696EA1C1774FF00B77E80</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FC8CF62B1C17E230008659C5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FC8CF6341C17E230008659C5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
