@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -18,27 +17,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TFH-tD-CGx">
-                                <rect key="frame" x="0.0" y="0.0" width="606" height="600"/>
-                                <color key="backgroundColor" red="0.88235294117647056" green="0.81568627450980391" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
-                            </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Splash Screen" translatesAutoresizingMaskIntoConstraints="NO" id="2L7-1p-kZr">
-                                <rect key="frame" x="131" y="-2" width="338" height="602"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="602" id="i8M-9D-ovy"/>
-                                    <constraint firstAttribute="width" constant="338" id="jAT-rz-ZXH"/>
-                                </constraints>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Splash Screen" translatesAutoresizingMaskIntoConstraints="NO" id="2OV-Yy-L0g">
+                                <rect key="frame" x="113" y="-33.5" width="375" height="667"/>
                             </imageView>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="TFH-tD-CGx" secondAttribute="trailing" constant="-20" id="DUG-Iq-dNj"/>
-                            <constraint firstItem="2L7-1p-kZr" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" constant="-2" id="Wkh-vz-TFM"/>
-                            <constraint firstItem="TFH-tD-CGx" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-20" id="fTj-ys-dSH"/>
-                            <constraint firstItem="2L7-1p-kZr" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="qAJ-fH-Bsy"/>
-                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="TFH-tD-CGx" secondAttribute="bottom" id="ryS-nC-i3B"/>
-                            <constraint firstItem="TFH-tD-CGx" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" id="xmV-D1-mXj"/>
+                            <constraint firstItem="2OV-Yy-L0g" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="QLn-qF-sHv"/>
+                            <constraint firstItem="2OV-Yy-L0g" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="YWH-AW-g8G"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -48,6 +35,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Splash Screen" width="750" height="1334"/>
+        <image name="Splash Screen" width="375" height="667"/>
     </resources>
 </document>

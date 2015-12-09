@@ -498,6 +498,7 @@
 				FC7696F61C1774FF00B77E80 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FC7696F71C1774FF00B77E80 /* Build configuration list for PBXNativeTarget "WeatherOrNotTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +507,7 @@
 				FC7696F91C1774FF00B77E80 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FC7696FA1C1774FF00B77E80 /* Build configuration list for PBXNativeTarget "WeatherOrNotUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +516,7 @@
 				FC7696FC1C1774FF00B77E80 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
